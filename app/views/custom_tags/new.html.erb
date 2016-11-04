@@ -1,0 +1,22 @@
+<div style="margin-left: 200px;">
+  Form to save mongod <br><br>
+  <p style="width: 800px; word-wrap: break-word;">
+    <%= @sentences.each do |sentence| %>
+      <%= sentence %><br>
+    <% end %>
+  </p><br><br>
+
+  <%= form_for @custom_tag do |f| %>
+    <%= f.label :emotion %>&emsp;
+    <%= f.text_field :emotion %><br><br>
+    <%= f.label :price %>&emsp;
+    <%= f.text_field :price %><br><br>
+    <%= f.label :service %>&emsp;
+    <%= f.text_field :service %><br><br>
+    <%= f.label :quality %>&emsp;
+    <%= f.text_field :quality %><br><br>
+    <%= f.label :scenery %>&emsp;
+    <%= f.text_field :scenery %><br><br>
+    <%= f.submit %>
+  <% end %>
+</div>

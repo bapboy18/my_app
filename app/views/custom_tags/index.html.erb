@@ -1,0 +1,26 @@
+List tag:<br>
+Emotion:<br>
+<% count_tag(@emotions).each do |key, value| %>
+  <%= key %>:&emsp;<%= value %><br>
+<% end %>
+
+Price:<br>
+<% count_tag(@prices).each do |key, value| %>
+  <%= key %>:&emsp;<%= value %><br>
+<% end %><br>
+
+Service:<br>
+<% count_tag(@services).each do |key, value| %>
+  <%= key %>:&emsp;<%= value %><br>
+<% end %><br>
+
+Quality: <br>
+<% count_tag(@qualities).each do |key, value| %>
+  <%= key %>:&emsp;<%= value %><br>
+<% end %><br>
+
+Scenery:<br>
+<% count_tag(@sceneries).each do |key, value| %>
+  <%= key %>:&emsp;<%= value %><br>
+<% end %><br>
+<%= link_to "New custom tag", new_custom_tag_path %>
