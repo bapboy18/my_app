@@ -1,0 +1,6 @@
+<h1>RawFiles#index</h1>
+<h3>Import raw file</h3>
+<%= form_tag import_raw_files_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>

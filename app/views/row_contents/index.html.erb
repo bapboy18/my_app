@@ -1,0 +1,11 @@
+<h1>RowContents#index</h1>
+<h3>Import raw file</h3>
+<%= form_tag import_row_contents_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %><br><br>
+
+<%= collection_check_boxes(:column, :ids, @raw_file.column_names, :id, :name) %>
+<br><br>
+<div id="dataSelector"></div>
+<div id="pivotGrid"></div>

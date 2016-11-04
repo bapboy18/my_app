@@ -1,0 +1,19 @@
+<h1>CustomTag#show</h1>
+<p>
+  Name: <%= @custom_tag.name %><br>
+  Content: <%= @custom_tag.content %><br>
+  Price :
+  <% @custom_tag.prices.each do |price| %>
+    <%= price.value %>&emsp;
+  <% end %><br>
+
+  Emotion:
+  <% @custom_tag.emotions.each do |emotion| %>
+    <%= emotion.feeling %>&emsp;
+  <% end %><br>
+
+  Service:
+  <% @custom_tag.services.each do |servi| %>
+    <%= servi.quality %>&emsp;
+  <% end %><br>
+</p>

@@ -1,0 +1,2 @@
+module RowContentsHelper
+end
